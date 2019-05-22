@@ -14,6 +14,11 @@ cd C:\PathWhereRepositoryWasCloned
 It will set some system configuration and set some ffile expoorer settings, then it will
 remove some default Windows apps. After that, it will install Hyper-V, WSL Docker and Lando.
 
+### Installing Lando
+
+When Lando installer launches, please uncheck _Git For Windows_ and _Docker_, because this script
+installs Git and Docker.
+
 ## Browsers
 
 It will install Google Chrome and Firefox.
