@@ -4,6 +4,8 @@ Clone this repository, update scripts accordingly and then run following command
 root PowerSheel (Run as Administrator):
 
 ```sh
+Set-ExecutionPolicy Bypass
+
 cd C:\PathWhereRepositoryWasCloned
 
 .\install.ps1
