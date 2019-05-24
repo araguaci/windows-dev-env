@@ -31,7 +31,7 @@ code --install-extension cjhowe7.laravel-blade
 code --install-extension amiralizadeh9480.laravel-extra-intellisense
 
 #--- PHP ---
-choco isntall -y php
+choco install -y php
 choco install -y composer
 choco install -y phpstorm
 choco install -y datagrip
