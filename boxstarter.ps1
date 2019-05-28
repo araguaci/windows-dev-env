@@ -172,8 +172,11 @@ code --install-extension amiralizadeh9480.laravel-extra-intellisense
 # Others
 cinst -y microsoftwebdriver
 
-# Update Env vars for CMDER
+# Update settings for CMDER
+$webClient.DownloadFile("https://github.com/harrysbaraini/windows-dev-env/raw/master/cmder/settings.xml", "$location\cmder\settings.xml");
 
+Move-Item -Path "C:\tools\Cmder\vendor\conemu-maximus5\ConEmu.xml" -Destination "C:\tools\Cmder\vendor\conemu-maximus5\ConEmu.xml.bkp"
+Copy-Item -Path "$location\cmder\settings.xml" -Destination "C:\tools\Cmder\vendor\conemu-maximus5\"
 
 If ($Env:Path -match [Regex]::Escape("C:\tools\Cmder\bin")) {
     [System.Environment]::SetEnvironmentVariable("PATH", $Env:Path + ";C:\tools\Cmder\bin", "User")
