@@ -224,6 +224,7 @@ $webClient.DownloadFile("https://birdfont.org/download/birdfont-3.23.4-free.exe"
 # Reactivate User Acess Control and Microsoft Update
 # ---------------------------------------------------
 
+Remove-Item -Path $location
 RefreshEnv
 
 Enable-UAC

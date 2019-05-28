@@ -8,12 +8,12 @@ Set-ExecutionPolicy Unrestricted --Force
 
 Now, click on the following link using Microsoft Edge:
 
-[INSTALL WINDOWS DEV ENVIRONMENT](http://boxstarter.org/package/nr/url?https://github.com/harrysbaraini/windows-dev-env/raw/master/boxstarter.ps1)
+[INSTALL WINDOWS DEV ENVIRONMENT](http://boxstarter.org/package/nr/url?https://github.com/harrysbaraini/windows-dev-env/raw/master/install.ps1)
 
 Or, run the following command on PowerShell as Administrator:
 
 ```sh
-START http://boxstarter.org/package/nr/url?https://github.com/harrysbaraini/windows-dev-env/raw/master/boxstarter.ps1
+START http://boxstarter.org/package/nr/url?https://github.com/harrysbaraini/windows-dev-env/raw/master/install.ps1
 ```
 
 ## System Configuration
