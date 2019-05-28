@@ -7,7 +7,6 @@ $webClient = New-Object System.Net.WebClient
 $objShell = New-Object -ComObject Shell.Application
 
 Disable-UAC
-Set-ExecutionPolicy Unrestricted -Force
 Disable-MicrosoftUpdate
 
 New-Item -ItemType Directory -Force -Path $location

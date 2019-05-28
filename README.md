@@ -1,14 +1,11 @@
 # Windows 10 Web Development Environment using Chocolatey
 
-Clone this repository, update scripts accordingly and then run following commands on
-root PowerSheel (Run as Administrator):
+Run PowerSheel as Administrator, then:
 
 ```sh
-Set-ExecutionPolicy Bypass
+Set-ExecutionPolicy Unrestricted --Force
 
-cd C:\PathWhereRepositoryWasCloned
-
-.\install.ps1
+START http://boxstarter.org/package/nr/url?https://github.com/harrysbaraini/windows-dev-env/raw/master/boxstarter.ps1
 ```
 
 ## System Configuration
