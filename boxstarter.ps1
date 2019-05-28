@@ -10,6 +10,9 @@ Disable-UAC
 Disable-MicrosoftUpdate
 
 New-Item -ItemType Directory -Force -Path $location
+New-Item -ItemType Directory -Force -Path "$location\tools"
+New-Item -ItemType Directory -Force -Path "$location\fonts"
+New-Item -ItemType Directory -Force -Path "$location\cmder"
 
 # ---------------------------------------------------
 # Set up Windows
@@ -121,7 +124,7 @@ RefreshEnv
 cinst -y docker-for-windows
 
 # Lando
-New-Item -ItemType Directory -Force -Path "$location\tools"
+
 $landoFile = "$location\tools\lando.exe"
 
 (New-Object System.Net.WebClient).DownloadFile("https://github.com/lando/lando/releases/download/v3.0.0-rc.16/lando-v3.0.0-rc.16.exe", $landoFile)
@@ -211,6 +214,11 @@ foreach($File in $(Get-ChildItem ".\fonts")) {
 
 cinst -y firacode
 cinst -y hackfont
+
+# Birdfont editor
+$birdfontInstaller = "$location/tools/birdfont.exe"
+$webClient.DownloadFile("https://birdfont.org/download/birdfont-3.23.4-free.exe", $birdfontInstaller);
+&$birdfontInstaller
 
 # ---------------------------------------------------
 # Reactivate User Acess Control and Microsoft Update
