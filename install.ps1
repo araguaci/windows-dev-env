@@ -29,5 +29,5 @@ executeScript "Browsers.ps1";
 executeScript "Others.ps1";
 
 Enable-UAC
-#Enable-MicrosoftUpdate
-#Install-WindowsUpdate -acceptEula
+Enable-MicrosoftUpdate
+Install-WindowsUpdate -acceptEula

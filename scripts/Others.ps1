@@ -18,7 +18,9 @@ choco install -y firacode
 choco install -y hackfont
 
 #--- Not related to development ---
+cinst -y 7zip.install
 choco install -y vlc
 choco install -y FoxitReader
 choco install -y spotify
 choco install -y slack
+choco install -y sysinternals
