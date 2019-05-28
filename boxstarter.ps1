@@ -127,6 +127,8 @@ $landoFile = "$location\tools\lando.exe"
 (New-Object System.Net.WebClient).DownloadFile("https://github.com/lando/lando/releases/download/v3.0.0-rc.16/lando-v3.0.0-rc.16.exe", $landoFile)
 &$landoFile
 
+RefreshEnv
+
 # Essential
 cinst -y git --package-parameters="'/GitAndUnixToolsOnPath /WindowsTerminal'"
 cinst -y cmder
@@ -181,6 +183,8 @@ If ($Env:Path -match [Regex]::Escape("C:\tools\Cmder\bin")) {
     [System.Environment]::SetEnvironmentVariable("PATH", $Env:Path + ";C:\tools\Cmder\bin", "User")
 }
 
+RefreshEnv
+
 # ---------------------------------------------------
 # Tools not related to development.
 # ---------------------------------------------------
@@ -211,6 +215,8 @@ cinst -y hackfont
 # ---------------------------------------------------
 # Reactivate User Acess Control and Microsoft Update
 # ---------------------------------------------------
+
+RefreshEnv
 
 Enable-UAC
 Enable-MicrosoftUpdate
