@@ -1,10 +1,18 @@
 # Windows 10 Web Development Environment using Chocolatey
 
-Run PowerSheel as Administrator, then:
+Run PowerShell as Administrator, then:
 
 ```sh
 Set-ExecutionPolicy Unrestricted --Force
+```
 
+Now, click on the following link using Microsoft Edge:
+
+[INSTALL WINDOWS DEV ENVIRONMENT](http://boxstarter.org/package/nr/url?https://github.com/harrysbaraini/windows-dev-env/raw/master/boxstarter.ps1)
+
+Or, run the following command on PowerShell as Administrator:
+
+```sh
 START http://boxstarter.org/package/nr/url?https://github.com/harrysbaraini/windows-dev-env/raw/master/boxstarter.ps1
 ```
 
