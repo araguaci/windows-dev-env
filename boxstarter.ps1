@@ -198,9 +198,9 @@ $fontsFolder = $objShell.Namespace(0x14)
 
 New-Item -ItemType Directory -Force -Path  "$location\fonts"
 
-$webClient.DownloadFile("https://github.com/kencrocken/FiraCodeiScript/raw/master/FiraCodeiScript-Bold.ttf", "$location\fonts\FiraCodeiScript-Bold.ttf")
-$webClient.DownloadFile("https://github.com/kencrocken/FiraCodeiScript/raw/master/FiraCodeiScript-Regular.ttf", "$location\fonts\FiraCodeiScript-Regular.ttf")
-$webClient.DownloadFile("https://github.com/kencrocken/FiraCodeiScript/raw/master/FiraCodeiScript-Italic.ttf", "$location\fonts\FiraCodeiScript-Italic.ttf")
+$webClient.DownloadFile("https://github.com/harrysbaraini/windows-dev-env/raw/master/fonts/FiraCodeiScript-Bold.ttf", "$location\fonts\FiraCodeiScript-Bold.ttf")
+$webClient.DownloadFile("https://github.com/harrysbaraini/windows-dev-env/raw/master/fonts/FiraCodeiScript-Regular.ttf", "$location\fonts\FiraCodeiScript-Regular.ttf")
+$webClient.DownloadFile("https://github.com/harrysbaraini/windows-dev-env/raw/master/fonts/FiraCodeiScript-Italic.ttf", "$location\fonts\FiraCodeiScript-Italic.ttf")
 
 foreach($File in $(Get-ChildItem ".\fonts")) {
     $fontsFolder.CopyHere($File.fullname)
