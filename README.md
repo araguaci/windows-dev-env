@@ -3,7 +3,7 @@
 Run PowerShell as Administrator, then:
 
 ```sh
-Set-ExecutionPolicy Unrestricted --Force
+Set-ExecutionPolicy Unrestricted -Force
 ```
 
 Now, click on the following link using Microsoft Edge:
